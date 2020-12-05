@@ -15,15 +15,18 @@ simplesmente prefiram realizar este projeto._
 
 ## Descrição do projeto
 
-Os alunos devem implementar o jogo *[Felli]* para dois jogadores.
+Os alunos devem implementar o jogo *[Felli]* para dois jogadores. Trata-se do
+mesmo jogo implementado o semestre passado em [LP1]. Devem usar o conjunto
+simplificado de regras, tal como foi o caso nesse projeto.
 
 O jogo deve ser implementado em consola (.NET Core 3.1) e em Unity. A lógica,
 regras e dados do jogo (o chamado **modelo**), devem ser completamente
 independentes tanto da interface de consola (`WriteLines`, `ReadLines`), como
 do Unity. Este modelo deve ser obrigatoriamente o mesmo em ambas as
 implementações, devendo ser partilhado de uma forma que não implique
-copiar os ficheiros de um lado para o outro. Existem formas de fazer isto ao
-nível do C\# ou até ao nível do Git.
+copiar os ficheiros de um lado para o outro. Existe forma de fazer isto ao
+nível do Git (como foi feito [aqui][ia-simplexity],
+por exemplo).
 
 O [Model-View-Controller (MVC)][MVC] *design pattern* ou um dos seus derivados,
 são bons pontos de partida para a realização deste projeto. Por exemplo,
@@ -32,6 +35,10 @@ independente do Unity, sendo trivial implementar uma versão em consola.
 
 Será muito valorizada a implementação de uma IA que consiga jogar contra um
 jogador humano. No entanto esta é totalmente opcional.
+
+A versão de consola deve ser multi-plataforma, ou seja, deve funcionar em Linux
+e macOS, pelo que devem ser evitados métodos e classes que apenas funcionam em
+Windows.
 
 Os grupos podem ter entre 2 a 3 elementos.
 
@@ -164,6 +171,7 @@ Este enunciado é disponibilizado através da licença [CC BY-NC-SA 4.0].
 * Curso:  [Licenciatura em Videojogos][lamv]
 * Instituição: [Universidade Lusófona de Humanidades e Tecnologias][ULHT]
 
+[LP1]:https://github.com/VideojogosLusofona/lp1_2019_p2
 [Projeto 1]:https://github.com/VideojogosLusofona/lp2_2020_p1
 [Projeto 2]:https://github.com/VideojogosLusofona/lp2_2020_p2
 [Felli]:https://boardgamegeek.com/boardgame/70116/18-ghosts
