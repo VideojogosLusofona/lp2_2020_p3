@@ -25,8 +25,8 @@ independentes tanto da interface de consola (`WriteLines`, `ReadLines`), como
 do Unity. Este modelo deve ser obrigatoriamente o mesmo em ambas as
 implementações, devendo ser partilhado de uma forma que não implique
 copiar os ficheiros de um lado para o outro. Existe forma de fazer isto ao
-nível do Git (como foi feito [aqui][ia-simplexity],
-por exemplo).
+nível do Git usando [sub-módulos][submodules], como foi feito
+[neste caso][ia-simplexity], por exemplo.
 
 O [Model-View-Controller (MVC)][MVC] *design pattern* ou um dos seus derivados,
 são bons pontos de partida para a realização deste projeto. Por exemplo,
@@ -174,8 +174,9 @@ Este enunciado é disponibilizado através da licença [CC BY-NC-SA 4.0].
 [LP1]:https://github.com/VideojogosLusofona/lp1_2019_p2
 [Projeto 1]:https://github.com/VideojogosLusofona/lp2_2020_p1
 [Projeto 2]:https://github.com/VideojogosLusofona/lp2_2020_p2
-[Felli]:https://boardgamegeek.com/boardgame/70116/18-ghosts
+[Felli]:https://en.wikipedia.org/wiki/Felli
 [MVC]:https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+[submodules]:https://git-scm.com/book/en/v2/Git-Tools-Submodules
 [ia-simplexity]:https://github.com/VideojogosLusofona/color-shape-links-ai-competition
 [Markdown]:https://guides.github.com/features/mastering-markdown/
 [Doxygen]:https://www.stack.nl/~dimitri/doxygen/
