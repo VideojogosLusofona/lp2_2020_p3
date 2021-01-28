@@ -116,6 +116,29 @@ O projeto deve ser submetido no Moodle até às **23h55 de 3 de fevereiro de
   que considerem úteis. Estes ficheiros devem ser incluídos no repositório em
   modo Git LFS.
 
+## Sugestões para uso de sub-módulos em Git
+
+Para fazerem _clone_ de um projeto com sub-módulos devem usar o seguinte
+comando, exemplificado para o projeto exemplo [MVCExample]:
+
+```
+git clone --recurse-submodules https://github.com/VideojogosLusofona/MVCExample.git
+```
+
+Caso se tenham esquecido de usar a opção `--recurse-submodules`, podem executar
+o seguinte comando na raiz do projeto que obtém os conteúdos dos sub-módulos:
+
+```
+git submodule update --init --recursive
+```
+
+Os sub-módulos estão inicialmente no estado `HEAD detached`, isto é, não estão
+em nenhum ramo. Para os sub-módulos ficarem no ramo pretendido, por exemplo o
+ramo `common`, basta fazer `cd` até à pasta de cada sub-módulo e fazer
+`git checkout common` (e depois `git pull` para obter as últimas alterações).
+
+<!-- git submodule foreach --recursive git checkout common-->
+
 ## Honestidade académica
 
 Nesta disciplina, espera-se que cada aluno siga os mais altos padrões de
@@ -176,6 +199,7 @@ Este enunciado é disponibilizado através da licença [CC BY-NC-SA 4.0].
 [Projeto 2]:https://github.com/VideojogosLusofona/lp2_2020_p2
 [Felli]:https://en.wikipedia.org/wiki/Felli
 [MVC]:https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+[MVCExample]:https://github.com/VideojogosLusofona/MVCExample.git
 [submodules]:https://git-scm.com/book/en/v2/Git-Tools-Submodules
 [ia-simplexity]:https://github.com/VideojogosLusofona/color-shape-links-ai-competition
 [Markdown]:https://guides.github.com/features/mastering-markdown/
