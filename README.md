@@ -105,7 +105,7 @@ ou totalmente cumpridos. Em particular:
 
 ## Entrega
 
-O projeto deve ser submetido no Moodle até às **23h55 de 28 de janeiro de
+O projeto deve ser submetido no Moodle até às **23h55 de 3 de fevereiro de
 2021**. O projeto entregue deve ter os seguintes conteúdos:
 
 * Pasta escondida `.git` com o repositório Git local do projeto.
