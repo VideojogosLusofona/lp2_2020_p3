@@ -135,7 +135,8 @@ git submodule update --init --recursive
 Os sub-módulos estão inicialmente no estado `HEAD detached`, isto é, não estão
 em nenhum ramo. Para os sub-módulos ficarem no ramo pretendido, por exemplo o
 ramo `common`, basta fazer `cd` até à pasta de cada sub-módulo e fazer
-`git checkout common` (e depois `git pull` para obter as últimas alterações).
+`git checkout common` (e depois `git pull` para obter as últimas alterações
+ou `git add/commit/push` para criarem _commits_ específicos ao sub-módulo).
 
 <!-- git submodule foreach --recursive git checkout common-->
 
